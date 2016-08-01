@@ -1,0 +1,13 @@
+!1 Test suite X
+
+This suite consists of a set of tests fo traffic ligthts control system!
+
+!contents -R2 -g -p -f -h
+
+!*< SLiM relevant stuff
+
+!define TEST_SYSTEM {slim}
+!path  ..\target\nodetest-1.00.00.jar
+!path  ..\target\lib\*
+
+*!
