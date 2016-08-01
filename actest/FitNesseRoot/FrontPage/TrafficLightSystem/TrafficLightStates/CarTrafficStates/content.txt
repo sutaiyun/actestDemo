@@ -6,3 +6,6 @@
 |previous States    |next States?|
 |red               |red, yellow|
 |red, yellow       |green      |
+|green             |yellow      |
+|yellow            |red         |
+|invalid state     |yellow blink|
