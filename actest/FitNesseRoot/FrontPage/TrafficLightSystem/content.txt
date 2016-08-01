@@ -7,7 +7,7 @@ This suite consists of a set of tests fo traffic ligthts control system!
 !*< SLiM relevant stuff
 
 !define TEST_SYSTEM {slim}
-!path  ..\target\nodetest-1.00.00.jar
+!path  ..\target\actestDemo-1.0-SNAPSHOT.jar
 !path  ..\target\lib\*
 
 *!
