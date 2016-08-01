@@ -5,3 +5,4 @@
 !|Traffic Lights Ac Test      |
 |previous States    |next States?|
 |red               |red, yellow|
+|red, yellow       |green      |
