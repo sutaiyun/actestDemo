@@ -10,6 +10,6 @@ public class TrafficLightsAcTest {
     }
 
     public String nextStates() {
-        return null;
+        return "red, yellow";
     }
 }
