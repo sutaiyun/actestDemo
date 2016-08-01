@@ -5,11 +5,16 @@
 package actestDemo.actest;
 
 public class TrafficLightsAcTest {
-    public void setPreviousStates(String states) {
-        System.out.println(states);
+    private String state;
+    public void setPreviousStates(String state) {
+        this.state = state;
     }
 
     public String nextStates() {
-        return "red, yellow";
+        if ("red".equals(state)) {
+            return "red, yellow";
+        }
+
+        return "green";
     }
 }
