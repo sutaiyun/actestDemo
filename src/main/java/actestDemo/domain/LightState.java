@@ -11,7 +11,7 @@ public enum LightState {
             return RED_YELLOW;
         }
     },
-    RED_YELLOW("RED, YELLOW") {
+    RED_YELLOW("RED_YELLOW") {
         public LightState next () {
             return GREEN;
         }
@@ -26,7 +26,7 @@ public enum LightState {
         return RED;
         }
     },
-    UNKNOWN("YELLOW BLINK");
+    UNKNOWN("YELLOW_BLINK");
 
     public String stateName;
     private LightState(String stateName) {

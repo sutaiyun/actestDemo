@@ -1,7 +1,6 @@
 package actestDemo.actest;
 
 import actestDemo.domain.LightState;
-import javafx.scene.effect.Light;
 
 import java.beans.PropertyEditorSupport;
 
@@ -28,7 +27,8 @@ public class LightStateEditor extends PropertyEditorSupport {
 
         setValue(LightState.UNKNOWN);
         */
-        setValue(LightState.valueFor(stateName));
+        System.out.println("wiki StateName are: " + stateName);
+        setValue(LightState.valueFor(stateName));   /* 从fitness的 wiki页面上  获取  stateName字符串， 然后 将这个字符串转成 state对象, value指 state对象 */
     }
 
     /* getValue() , return object
@@ -38,6 +38,7 @@ public class LightStateEditor extends PropertyEditorSupport {
 
     public String getAsText () {
         LightState state = (LightState) getValue ();    /* getValue 即为state对象 */
+        System.out.println("state object StateName are: " + state.stateName);
         return state.stateName;
     }
 }

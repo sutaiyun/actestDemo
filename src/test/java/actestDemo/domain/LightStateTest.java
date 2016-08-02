@@ -18,11 +18,11 @@ public class LightStateTest {
     public static List<Object[]> data() {
         return asList(new Object[][] {
                 { "RED", RED },
-                { "RED, YELLOW", RED_YELLOW },
+                { "RED_YELLOW", RED_YELLOW },
                 { "GREEN", GREEN },
                 { "YELLOW", YELLOW },
-                { "YELLOW BLINK", UNKNOWN },
-                { "INVALID VALUE", UNKNOWN }
+                { "YELLOW_BLINK", UNKNOWN },
+                { "INVALID_VALUE", UNKNOWN }
         });
     }
 

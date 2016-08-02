@@ -3,9 +3,11 @@
 
 
 !|Traffic Lights Ac Test      |
-|previous States    |next States?|
-|red               |red, yellow|
-|red, yellow       |green      |
-|green             |yellow      |
-|yellow            |red         |
-|invalid state     |yellow blink|
+|previous State    |next States?|
+|RED               |RED_YELLOW|
+|RED_YELLOW       |GREEN      |
+|GREEN             |YELLOW      |
+|YELLOW            |RED         |
+
+
+**************************|INVALID_STATE     |YELLOW_BLINK|
