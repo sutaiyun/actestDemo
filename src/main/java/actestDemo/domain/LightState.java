@@ -8,7 +8,7 @@ import javafx.scene.effect.Light;
 public enum LightState {
     RED {
         public LightState next () {
-            return null;
+            return RED_YELLOW;
         }
     },
     RED_YELLOW {
