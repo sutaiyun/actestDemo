@@ -14,6 +14,13 @@ public class LightStateEditor extends PropertyEditorSupport {
             return;
         }
         setValue(LightState.RED_YELLOW);
+
+        for (LightState lightState : LightState.values()) {
+            if (lightState.stateName.equals(stateName)) {
+                setValue(lightState);
+                return;
+            }
+        }
     }
 
     /* getValue() , return object
