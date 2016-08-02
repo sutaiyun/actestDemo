@@ -23,10 +23,13 @@ public class LightStateTest {
     public static List<Object[]> data () {
         return asList(new Object[][]{
                 //previous,   next
-                {RED, RED_YELLOW},
-                {RED_YELLOW, GREEN}
+                { RED,           RED_YELLOW },
+                { RED_YELLOW,    GREEN },
+                { GREEN,         YELLOW },
+                { YELLOW,        RED}
         });
     }
+
     @org.junit.Before
     public void setUp() throws Exception {
 
