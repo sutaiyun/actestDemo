@@ -11,7 +11,7 @@ public enum LightState {
             return RED_YELLOW;
         }
     },
-    RED_YELLOW("RED_YELLOW") {
+    RED_YELLOW("RED, YELLOW") {
         public LightState next () {
             return GREEN;
         }
@@ -29,8 +29,12 @@ public enum LightState {
     UNKNOWN("UNKNOWN");
 
     public String stateName;
-    private LightState(String stringName) {
-        this.stateName = stringName;
+    private LightState(String stateName) {
+        this.stateName = stateName;
+    }
+
+    private LightState() {
+        this("");
     }
 
     //public abstract LightState next ();

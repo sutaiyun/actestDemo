@@ -9,11 +9,13 @@ import java.beans.PropertyEditorSupport;
  */
 public class LightStateEditor extends PropertyEditorSupport {
     public void setAsText(String stateName) {
+        /*
         if ("RED".equals(stateName)) {
             setValue(LightState.RED);
             return;
         }
         setValue(LightState.RED_YELLOW);
+        */
 
         for (LightState lightState : LightState.values()) {
             if (lightState.stateName.equals(stateName)) {
@@ -21,6 +23,8 @@ public class LightStateEditor extends PropertyEditorSupport {
                 return;
             }
         }
+
+        setValue(LightState.UNKNOWN);
     }
 
     /* getValue() , return object
