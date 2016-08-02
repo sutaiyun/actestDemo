@@ -1,6 +1,7 @@
 package actestDemo.actest;
 
 import actestDemo.domain.LightState;
+import javafx.scene.effect.Light;
 
 import java.beans.PropertyEditorSupport;
 
@@ -31,4 +32,9 @@ public class LightStateEditor extends PropertyEditorSupport {
        this object create by String state
        so fitnesse can use String to set enum State
      */
+
+    public String getAsText () {
+        LightState state = (LightState) getValue ();    /* getValue 即为state对象 */
+        return state.stateName;
+    }
 }

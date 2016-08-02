@@ -26,7 +26,7 @@ public enum LightState {
         return RED;
         }
     },
-    UNKNOWN("UNKNOWN");
+    UNKNOWN("YELLOW BLINK");
 
     public String stateName;
     private LightState(String stateName) {

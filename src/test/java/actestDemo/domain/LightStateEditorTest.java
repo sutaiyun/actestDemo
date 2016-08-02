@@ -20,13 +20,15 @@ public class LightStateEditorTest {
 
     @Parameters
     public static List<Object[]> data() {
-        return asList(new Object[][] {
-                { "RED",            RED },
-                { "RED, YELLOW",    RED_YELLOW },
-                { "GREEN", GREEN },
-                { "YELLOW", YELLOW },
-                { "YELLOW BLINK", UNKNOWN }
-        });
+        return asList(new Object[][]{
+                        {"RED", RED},
+                        {"RED, YELLOW", RED_YELLOW},
+                        {"GREEN", GREEN},
+                        {"YELLOW", YELLOW},
+                        {"YELLOW BLINK", UNKNOWN},
+                        {"invalid state", UNKNOWN}
+                }
+        );
     }
     /*
     private LightStateEditor editor = new LightStateEditor();
@@ -51,5 +53,11 @@ public class LightStateEditorTest {
     public void setAsText () {
         editor.setAsText(stateName);                /* 模拟  网页wiki  设置 state 串 */
         assertEquals(state, editor.getValue());     /* editor 是从wiki 网页上获取的string，然后转化成state对象 */
+    }
+
+    @Test
+    public void getAsText () {
+        editor.setValue(state);      /*  设置状态， 状态也转化为stateName , 与setAsText相同都是 */
+        assertEquals(stateName, editor.getAsText());        /* 获取 stateName */
     }
 }
