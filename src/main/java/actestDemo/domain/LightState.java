@@ -41,4 +41,14 @@ public enum LightState {
     public LightState next () {
         return UNKNOWN;
     }
+
+    public static LightState valueFor(String stateName) {
+        for (LightState state : values()) {
+            if (state.stateName.equals(stateName)) {
+                return state;
+            }
+        }
+
+        return UNKNOWN;
+    }
 }

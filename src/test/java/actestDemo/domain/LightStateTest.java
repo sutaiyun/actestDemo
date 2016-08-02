@@ -1,59 +1,41 @@
 package actestDemo.domain;
 
-import static actestDemo.domain.LightState.*;
-import static java.util.Arrays.asList;
-
+import static java.util.Arrays.*;
 import static org.junit.Assert.*;
+import static actestDemo.domain.LightState.*;
+
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-import org.omg.CORBA.UNKNOWN;
 
-import java.util.Arrays;
-import java.util.List;
-
-
-/**
- * Created by sutaiyun on 2016/8/2.
- */
 @RunWith(Parameterized.class)
 public class LightStateTest {
 
     @Parameters
-    public static List<Object[]> data () {
-        return asList(new Object[][]{
-                //previous,   next
-                { RED,           RED_YELLOW },
-                { RED_YELLOW,    GREEN },
-                { GREEN,         YELLOW },
-                { YELLOW,        RED},
-                { UNKNOWN,        UNKNOWN }
+    public static List<Object[]> data() {
+        return asList(new Object[][] {
+                { "RED", RED },
+                { "RED, YELLOW", RED_YELLOW },
+                { "GREEN", GREEN },
+                { "YELLOW", YELLOW },
+                { "YELLOW BLINK", UNKNOWN },
+                { "INVALID VALUE", UNKNOWN }
         });
     }
 
-    @org.junit.Before
-    public void setUp() throws Exception {
+    private String stateName;
+    private LightState state;
 
-    }
-
-    @org.junit.After
-    public void tearDown() throws Exception {
-
-    }
-
-    private LightState previousState;
-    private LightState nextState;
-
-    public LightStateTest(LightState previousState, LightState nextState) {
-        this.previousState = previousState;
-        this.nextState = nextState;
+    public LightStateTest(String stateName, LightState state) {
+        this.stateName = stateName;
+        this.state = state;
     }
 
     @Test
-    public void testStateChange() {
-//        assertEquals(RED_YELLOW, RED.next());
-//        assertEquals(LightState.GREEN, RED_YELLOW.next());
-        assertEquals(nextState, previousState.next());
+    public void valueFor() {
+        assertEquals(state, LightState.valueFor(stateName));
     }
 }
