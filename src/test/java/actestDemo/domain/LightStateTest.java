@@ -1,13 +1,32 @@
 package actestDemo.domain;
 
+import static actestDemo.domain.LightState.*;
+import static java.util.Arrays.asList;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+import java.util.Arrays;
+import java.util.List;
+
 
 /**
  * Created by sutaiyun on 2016/8/2.
  */
+@RunWith(Parameterized.class)
 public class LightStateTest {
+
+    @Parameters
+    public static List<Object[]> data () {
+        return asList(new Object[][]{
+                //previous,   next
+                {RED, RED_YELLOW},
+                {RED_YELLOW, GREEN}
+        });
+    }
     @org.junit.Before
     public void setUp() throws Exception {
 
@@ -18,9 +37,18 @@ public class LightStateTest {
 
     }
 
+    private LightState previousState;
+    private LightState nextState;
+
+    public LightStateTest(LightState previousState, LightState nextState) {
+        this.previousState = previousState;
+        this.nextState = nextState;
+    }
+
     @Test
     public void testStateChange() {
-        assertEquals(LightState.RED_YELLOW, LightState.RED.next());
-        assertEquals(LightState.GREEN, LightState.RED_YELLOW.next());
+//        assertEquals(RED_YELLOW, RED.next());
+//        assertEquals(LightState.GREEN, RED_YELLOW.next());
+        assertEquals(nextState, previousState.next());
     }
 }
