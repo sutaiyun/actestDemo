@@ -25,7 +25,11 @@ public enum LightState {
         public LightState next() {
         return RED;
         }
-    };
+    },
+    UNKNOWN;
 
-    public abstract LightState next ();
+    //public abstract LightState next ();
+    public LightState next () {
+        return UNKNOWN;
+    }
 }

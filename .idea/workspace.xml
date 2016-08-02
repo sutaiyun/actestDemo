@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0b71689-7b80-4193-a1ee-617d990b5ccf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" afterPath="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateTest.java" afterPath="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateTest.java" />
     </list>
     <ignored path="actestDemo.iws" />
@@ -51,8 +52,8 @@
       <file leaf-file-name="LightState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="250">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="e#176#177#0" expanded="true" />
                 <element signature="e#217#218#0" expanded="true" />
@@ -62,6 +63,8 @@
                 <element signature="e#405#406#0" expanded="true" />
                 <element signature="e#460#461#0" expanded="true" />
                 <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +73,8 @@
       <file leaf-file-name="LightStateTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="325">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,8 +112,8 @@
         <option value="$PROJECT_DIR$/src/test/java/LightStateTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/uttest/LightStateTestTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" />
         <option value="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" />
       </list>
     </option>
   </component>
@@ -909,12 +912,12 @@
       <updated>1470051025523</updated>
       <workItem from="1470051028876" duration="1284000" />
       <workItem from="1470056116609" duration="6524000" />
-      <workItem from="1470067544569" duration="6703000" />
+      <workItem from="1470067544569" duration="6950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14511000" />
+    <option name="totallyTimeSpent" value="14758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -997,6 +1000,8 @@
             <element signature="e#405#406#0" expanded="true" />
             <element signature="e#460#461#0" expanded="true" />
             <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1055,8 +1060,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="250">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="e#176#177#0" expanded="true" />
             <element signature="e#217#218#0" expanded="true" />
@@ -1066,14 +1071,16 @@
             <element signature="e#405#406#0" expanded="true" />
             <element signature="e#460#461#0" expanded="true" />
             <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="325">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

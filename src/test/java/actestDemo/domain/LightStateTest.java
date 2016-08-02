@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+import org.omg.CORBA.UNKNOWN;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +27,8 @@ public class LightStateTest {
                 { RED,           RED_YELLOW },
                 { RED_YELLOW,    GREEN },
                 { GREEN,         YELLOW },
-                { YELLOW,        RED}
+                { YELLOW,        RED},
+                { UNKNOWN,        UNKNOWN }
         });
     }
 
