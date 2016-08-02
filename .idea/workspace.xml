@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0b71689-7b80-4193-a1ee-617d990b5ccf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/actestDemo/actest/LightStateEditor.java" afterPath="$PROJECT_DIR$/src/main/java/actestDemo/actest/LightStateEditor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" afterPath="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java" afterPath="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java" />
     </list>
     <ignored path="actestDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LightStateEditorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LightStateEditorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="550">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LightState.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LightState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="400">
+              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
               <folding>
                 <element signature="e#183#184#0" expanded="true" />
                 <element signature="e#224#225#0" expanded="true" />
@@ -90,7 +88,7 @@
                 <element signature="e#531#532#0" expanded="true" />
                 <element signature="e#635#636#0" expanded="true" />
                 <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
                 <element signature="e#804#805#0" expanded="true" />
                 <element signature="e#834#835#0" expanded="true" />
               </folding>
@@ -140,9 +138,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/actestDemo/actest/LightStateEditorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/actestDemo/actest/LightStateEditor.java" />
         <option value="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" />
+        <option value="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java" />
       </list>
     </option>
   </component>
@@ -944,16 +942,16 @@
       <updated>1470051025523</updated>
       <workItem from="1470051028876" duration="1284000" />
       <workItem from="1470056116609" duration="6524000" />
-      <workItem from="1470067544569" duration="16493000" />
+      <workItem from="1470067544569" duration="17050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24301000" />
+    <option name="totallyTimeSpent" value="24858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -963,7 +961,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24114583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1034,7 +1032,7 @@
             <element signature="e#531#532#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
             <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
             <element signature="e#804#805#0" expanded="true" />
             <element signature="e#834#835#0" expanded="true" />
           </folding>
@@ -1111,20 +1109,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="400">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
           <folding>
             <element signature="e#183#184#0" expanded="true" />
             <element signature="e#224#225#0" expanded="true" />
@@ -1136,9 +1124,19 @@
             <element signature="e#531#532#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
             <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
             <element signature="e#804#805#0" expanded="true" />
             <element signature="e#834#835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

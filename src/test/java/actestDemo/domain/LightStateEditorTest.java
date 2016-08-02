@@ -22,7 +22,10 @@ public class LightStateEditorTest {
     public static List<Object[]> data() {
         return asList(new Object[][] {
                 { "RED",            RED },
-                { "RED, YELLOW",    RED_YELLOW }
+                { "RED, YELLOW",    RED_YELLOW },
+                { "GREEN", GREEN },
+                { "YELLOW", YELLOW },
+                { "YELLOW BLINK", UNKNOWN }
         });
     }
     /*
