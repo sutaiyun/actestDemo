@@ -13,7 +13,17 @@ public enum LightState {
     },
     RED_YELLOW {
         public LightState next () {
-            return null;
+            return GREEN;
+        }
+    },
+    GREEN {
+        public LightState next () {
+            return YELLOW;
+        }
+    },
+    YELLOW {
+        public LightState next() {
+        return RED;
         }
     };
 

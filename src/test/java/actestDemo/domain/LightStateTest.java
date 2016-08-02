@@ -21,5 +21,6 @@ public class LightStateTest {
     @Test
     public void testStateChange() {
         assertEquals(LightState.RED_YELLOW, LightState.RED.next());
+        assertEquals(LightState.GREEN, LightState.RED_YELLOW.next());
     }
 }
