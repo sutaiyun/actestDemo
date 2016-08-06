@@ -1,0 +1,58 @@
+!c WikiDescription(居中显示的示例！)
+
+
+!1 一、Wiki标题  1
+!2 1、Wiki标题  2
+!3 a、Wiki标题  3
+!4 Wiki标题  4
+!5 Wiki标题  5
+!6 Wiki标题  6
+!1 二、文字格式化
+!2 1、 ''格式1 斜体''
+!2 2、 '''格式2 加粗'''  
+!2 3、 #注释，但注释不能嵌套
+#注释
+#注释
+#注释
+三个注释都不能显示！！！
+!2 4、 --删除格式--
+!2 5、  !-嵌套的html-! 
+!- 
+<html><body><p><a href="http://baidu.com">本文本</a> 是一个指向万维网上的页面的链接。</p>
+</body></html>
+-!
+!2 6、  !<显示原始html？？？>! 
+!< 
+<html><body><p><a href="http://baidu.com">本文本</a> 是一个指向万维网上的页面的链接。</p>
+</body></html>
+>!
+<html><body><p><a href="http://baidu.com">本文本</a> 是一个指向万维网上的页面的链接。</p>
+</body></html>
+!1 三、文档格式化
+!2 1、格式化文档
+{{{格式化文档!!!}}}
+!2 2、折叠文档
+!note  说明（注意说明前有两个空格），折叠标志可嵌套
+!* [折叠的文档1]  !note   无>符号, 折叠文档有效， note不可嵌套
+   multi-line wiki text 
+   N.B.: Multiple asterisks are allowed, e.g., !**** 折叠标志可嵌套
+*!
+
+!*> [折叠的文档2] !note  有>符号， 折叠文档有效， note不可嵌套
+   multi-line wiki text 
+   N.B.: Multiple asterisks are allowed, e.g., !****> text
+*!
+
+!note  有<符号，折叠文档3 无效，
+!*< [折叠的文档3] !note  有<符号，note不可嵌套
+   multi-line wiki text 
+   N.B.: Multiple asterisks are allowed, e.g., !****< text
+*!
+!2 3、分段1
+pre
+ ---- 分段1...separates each "phase"   ---- 分段2    ----分段3
+!2 4、分段2
+over-text----under-text
+over-text-----under-text
+over-text---------under-text
+

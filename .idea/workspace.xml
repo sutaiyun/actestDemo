@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0b71689-7b80-4193-a1ee-617d990b5ccf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actest/FitNesseRoot/FrontPage/TrafficLightSystem/TrafficLightStates/CarTrafficStates/content.txt" afterPath="$PROJECT_DIR$/actest/FitNesseRoot/FrontPage/TrafficLightSystem/TrafficLightStates/CarTrafficStates/content.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actest/FitNesseRoot/RecentChanges/content.txt" afterPath="$PROJECT_DIR$/actest/FitNesseRoot/RecentChanges/content.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/actestDemo/actest/LightStateEditor.java" afterPath="$PROJECT_DIR$/src/main/java/actestDemo/actest/LightStateEditor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/actestDemo/actest/TrafficLightsAcTest.java" afterPath="$PROJECT_DIR$/src/main/java/actestDemo/actest/TrafficLightsAcTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" afterPath="$PROJECT_DIR$/src/main/java/actestDemo/domain/LightState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java" afterPath="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateEditorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateTest.java" afterPath="$PROJECT_DIR$/src/test/java/actestDemo/domain/LightStateTest.java" />
     </list>
     <ignored path="actestDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +39,8 @@
       <file leaf-file-name="TrafficLightsAcTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/actestDemo/actest/TrafficLightsAcTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="350">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#738#739#0" expanded="true" />
@@ -924,12 +917,12 @@
       <updated>1470051025523</updated>
       <workItem from="1470051028876" duration="1284000" />
       <workItem from="1470056116609" duration="6524000" />
-      <workItem from="1470067544569" duration="27151000" />
+      <workItem from="1470067544569" duration="27239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34959000" />
+    <option name="totallyTimeSpent" value="35047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1131,8 +1124,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/actestDemo/actest/TrafficLightsAcTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="350">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#738#739#0" expanded="true" />
