@@ -31,11 +31,15 @@ public class FirstLightSwitchingCrossingController {
             这里实现 命令/查询分离模式 ,   即让firstLight()函数不是返回next， 而是返回当前状态。
          */
         if (!isValidLightStateConfiguration()) {
-            firstLightState = LightState.UNKNOWN;
-            secondLightState = LightState.UNKNOWN;
+            warningConfiguration();
             return ;
         }
         firstLightState = firstLightState.next();
+    }
+
+    private void warningConfiguration() {
+        firstLightState = LightState.UNKNOWN;
+        secondLightState = LightState.UNKNOWN;
     }
 
     private boolean isValidLightStateConfiguration() {
