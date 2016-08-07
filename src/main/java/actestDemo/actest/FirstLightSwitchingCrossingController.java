@@ -18,9 +18,17 @@ public class FirstLightSwitchingCrossingController {
     }
 
     public LightState firstLight() {
-        return firstLightState.next();
+        return firstLightState;
     }
     public LightState secondLight() {
         return secondLightState;
+    }
+
+    public void execute() {
+        /*
+            该函数在由父类实现，在每个set之后被调用。
+            这里实现 命令/查询分离模式 ,   即让firstLight()函数不是返回next， 而是返回当前状态。
+         */
+        firstLightState = firstLightState.next();
     }
 }
