@@ -40,7 +40,8 @@ public class TrafficLightsAcTest {
         this.state = state;
     }
 
-    public LightState nextStates() {    /* 返回state对象， 然后由  LightStateEditor 转成了 string */
+    public LightState nextStates() {
+        /* 返回state对象， 然后由  LightStateEditor 转成了 string */
         return state.next();
     }
 }
