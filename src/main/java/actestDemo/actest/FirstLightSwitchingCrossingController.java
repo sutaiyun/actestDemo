@@ -7,19 +7,20 @@ import actestDemo.domain.LightState;
  */
 public class FirstLightSwitchingCrossingController {
     private LightState firstLightState;
+    private LightState secondLightState;
 
     public void setFirstLight(LightState state) {
         firstLightState = state;
     }
 
     public void setSecondLight(LightState state) {
-        //not use now!!!!!!
+        secondLightState = state;
     }
 
     public LightState firstLight() {
         return firstLightState.next();
     }
     public LightState secondLight() {
-        return LightState.RED;
+        return secondLightState;
     }
 }
