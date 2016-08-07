@@ -15,10 +15,10 @@ public class FirstLightSwitchingCrossingController {
     }
 
     public LightState firstLight() {
-        return LightState.UNKNOWN;
+        return LightState.YELLOW;
     }
 
     public LightState secondLight() {
-        return LightState.UNKNOWN;
+        return LightState.RED;
     }
 }

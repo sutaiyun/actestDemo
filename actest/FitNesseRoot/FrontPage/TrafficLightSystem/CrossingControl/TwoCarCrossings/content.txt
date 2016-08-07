@@ -5,4 +5,4 @@
 
 !|FirstLightSwitchingCrossingController  |
 |first light|second light|first light?|second light?|
-| green     | read       | yellow     | red         |
+| YELLOW     | RED       | YELLOW     | RED        |
