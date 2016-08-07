@@ -1,0 +1,8 @@
+!*> setup
+|import|
+|actestDemo.actest|
+*!
+
+!|FirstLightSwitchingCrossingController  |
+|first light|second light|first light?|second light?|
+| green     | read       | yellow     | red         |

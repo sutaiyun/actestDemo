@@ -1,5 +1,8 @@
-!|import                          |
+!*> setup
+|import|
 |actestDemo.actest|
+*!
+
 
 
 !|Traffic Lights Ac Test      |
