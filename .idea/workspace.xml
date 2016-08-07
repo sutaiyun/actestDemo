@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0b71689-7b80-4193-a1ee-617d990b5ccf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actest/FitNesseRoot/FrontPage/TrafficLightSystem/CrossingControl/TwoCarCrossings/content.txt" afterPath="$PROJECT_DIR$/actest/FitNesseRoot/FrontPage/TrafficLightSystem/CrossingControl/TwoCarCrossings/content.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actest/FitNesseRoot/RecentChanges/content.txt" afterPath="$PROJECT_DIR$/actest/FitNesseRoot/RecentChanges/content.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/actestDemo/actest/FirstLightSwitchingCrossingController.java" afterPath="$PROJECT_DIR$/src/main/java/actestDemo/actest/FirstLightSwitchingCrossingController.java" />
     </list>
     <ignored path="actestDemo.iws" />
@@ -97,8 +99,8 @@
       <file leaf-file-name="FirstLightSwitchingCrossingController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/actestDemo/actest/FirstLightSwitchingCrossingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="81">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#327#328#0" expanded="true" />
@@ -109,8 +111,8 @@
                 <element signature="e#534#535#0" expanded="true" />
                 <element signature="e#572#573#0" expanded="true" />
                 <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#1135#1136#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1269#1270#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -910,16 +912,16 @@
       <workItem from="1470051028876" duration="1284000" />
       <workItem from="1470056116609" duration="6524000" />
       <workItem from="1470067544569" duration="27239000" />
-      <workItem from="1470537655575" duration="5113000" />
+      <workItem from="1470537655575" duration="6134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40160000" />
+    <option name="totallyTimeSpent" value="41181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1384" height="738" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -929,7 +931,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24045801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1143,8 +1145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/actestDemo/actest/FirstLightSwitchingCrossingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="81">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#327#328#0" expanded="true" />
@@ -1155,8 +1157,8 @@
             <element signature="e#534#535#0" expanded="true" />
             <element signature="e#572#573#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
           </folding>
         </state>
       </provider>

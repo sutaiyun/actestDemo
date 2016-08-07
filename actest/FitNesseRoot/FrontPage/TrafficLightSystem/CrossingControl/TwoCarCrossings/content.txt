@@ -28,7 +28,7 @@
 !|scenario        |invalid combination |  firstLight  ||  secondLight  |
 | set first light  | @firstLight  |
 | set second light | @secondLight |
-| execute |
+| swtich first light |
 | check        |  firstLight  |  UNKNOWN  |
 | check        |  secondLight |  UNKNOWN  |
 

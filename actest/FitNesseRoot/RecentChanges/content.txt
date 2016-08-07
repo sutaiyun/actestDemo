@@ -1,4 +1,4 @@
-|FrontPage.TrafficLightSystem.CrossingControl.TwoCarCrossings||15:56:00 星期日, 八月 07, 2016|
+|FrontPage.TrafficLightSystem.CrossingControl.TwoCarCrossings||16:38:28 星期日, 八月 07, 2016|
 |FrontPage.TrafficLightSystem.TrafficLightStates.CarTrafficStates||11:08:26 星期日, 八月 07, 2016|
 |FrontPage.TrafficLightSystem.CrossingControl||10:59:31 星期日, 八月 07, 2016|
 |FrontPage.ToolsDemo.WikiDescription||14:51:23 星期六, 八月 06, 2016|

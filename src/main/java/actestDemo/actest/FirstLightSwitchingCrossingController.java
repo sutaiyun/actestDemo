@@ -30,6 +30,10 @@ public class FirstLightSwitchingCrossingController {
             该函数在由父类实现，在每个set之后被调用。
             这里实现 命令/查询分离模式 ,   即让firstLight()函数不是返回next， 而是返回当前状态。
          */
+        swtichFirstLight();
+    }
+
+    public void swtichFirstLight() {
         if (!isValidLightStateConfiguration()) {
             warningConfiguration();
             return ;
