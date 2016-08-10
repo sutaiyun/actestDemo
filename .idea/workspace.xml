@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0b71689-7b80-4193-a1ee-617d990b5ccf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restServer/.idea/misc.xml" afterPath="$PROJECT_DIR$/restServer/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restServer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/restServer/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restServer/pom.xml" afterPath="$PROJECT_DIR$/restServer/pom.xml" />
     </list>
