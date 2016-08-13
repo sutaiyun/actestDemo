@@ -2,3 +2,8 @@ actest/log/
 log/
 target/
 actest/FitNesseRoot/files/testResults/
+.idea
+actestDemo.iml
+restServer/target
+restServer/.idea
+restServer/resServer.iml
