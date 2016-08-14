@@ -17,5 +17,19 @@
 2,   将Xebia的所有依赖包加入到 target\lib目录下。
 3,   在测试用例中 使用该脚本。  '''
 
+!| import |
+| com.xebia.incubator.xebium |
+| library |
+| selenium driver fixture |
+
+''' | set timeout To |  2000ms  | '''
 | script | selenium driver fixture |
-| start browser | firefox | on url | http://www.baidu.com |
+| setTimeoutToSeconds | 2     |
+| start browser | firefox | on url | http://localhost:8080/ |
+|ensure       |do     |open        |on                      |/                             |
+|stop browser|
+
+!| script     |selenium driver fixture                             |
+|start browser|firefox|on url    |http://www.baidu.com/            |
+|ensure       |do     |open      |on|/                             |
+|stop browser|
