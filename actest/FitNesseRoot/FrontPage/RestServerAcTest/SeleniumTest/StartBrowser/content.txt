@@ -1,0 +1,21 @@
+!path ..\target\lib\*
+!define TEST_SYSTEM {slim}
+
+| import |
+| com.xebia.incubator.xebium |
+| library |
+| selenium driver fixture |
+
+''' You can find Slenium driver fixture  version by Xebium plugins!!! 
+    http://xebia.github.com/Xebium/  
+    git://github.com/xebia/Xebium   '''
+    
+''' Xebium 是slenium ide 插件， 在chrom上可以抓取 用户的web浏览行为，并转化为 fitnesse格式的脚本！ '''
+''' fitnesse要使用该功能，需要将Xebium的依赖包 都放到target\lib目录下 '''
+''' 使用方式如下：  
+1，  在浏览器上通过 Xebium 录取用户行为，并转化为 fitnesse格式脚本。
+2,   将Xebia的所有依赖包加入到 target\lib目录下。
+3,   在测试用例中 使用该脚本。  '''
+
+| script | selenium driver fixture |
+| start browser | firefox | on url | http://www.baidu.com |
