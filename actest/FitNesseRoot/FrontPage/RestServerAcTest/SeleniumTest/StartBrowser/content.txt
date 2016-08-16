@@ -25,7 +25,7 @@
 ''' | set timeout To |  2000ms  | '''
 | script | selenium driver fixture |
 | setTimeoutToSeconds | 2     |
-| start browser | firefox | on url | http://localhost:8080/ |
+| start browser | firefox | on url | http://localhost:9000/ |
 |ensure       |do     |open        |on                      |/                             |
 |stop browser|
 
