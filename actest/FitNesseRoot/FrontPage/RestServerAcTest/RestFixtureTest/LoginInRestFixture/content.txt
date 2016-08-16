@@ -1,0 +1,20 @@
+!path ..\target\lib\*
+!define TEST_SYSTEM {slim}
+
+| Import |
+| smartrics.rest.fitnesse.fixture |
+
+'''   restFixture  插件在 fitnesse中的使用 demo  '''
+'''   将  restFixtureDemo中 所有的依赖包 copy到 target\lib下 ''''
+
+!define  contentVar= { |||||||| }
+
+|Table: Rest Fixture |  http://localhost:9000 |
+| setHeader | Content-Type : application/json;charset=UTF-8 |
+| setBody | {bizData: {userName: "admin", password: "admin"}}  |
+| POST | /session/login | 200 | Content-Type : application/json; | jsonbody.msg == "success" |
+| let  | content           | js  | response.body                     |              |
+| let  | contentMsg        | js  | response.jsonbody.msg             |              |
+| let  | content1          | js  | symbols.get('content')            |              |
+| let  | $contentMsg1      | js  | symbols.get('contentMsg')         |              |
+| let  | token             | js  | response.jsonbody.loginRsp.token  |              |
