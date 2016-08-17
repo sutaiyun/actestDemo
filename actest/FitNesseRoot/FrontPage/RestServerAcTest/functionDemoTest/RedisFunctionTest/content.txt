@@ -1,0 +1,14 @@
+!path ..\target\lib\*
+!define TEST_SYSTEM {slim}
+
+| Import |
+| smartrics.rest.fitnesse.fixture |
+
+
+|Table: Rest Fixture |  http://localhost:9000 |
+| setHeader | Content-Type : application/json;charset=UTF-8 |
+| setBody | {bizData: {key: "sutaiyun"}}  |
+| POST | /redis/sutaiyun | 200 | Content-Type : application/json; | jsonbody.bizData.sutaiyun == "xiayunlan" |
+| let  | content           | js  | response.body                     |              |
+| let  | contentMsg        | js  | response.jsonbody.msg             |              |
+
