@@ -1,7 +1,9 @@
 package actestDemo.myRestExample;
 
 import actestDemo.common.*;
+import actestDemo.common.Response;
 import net.minidev.json.JSONObject;
+import org.apache.catalina.connector.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,15 +32,22 @@ public class RedisRestExample {
     private DemoConfig demoConfig;
 
     @RequestMapping(value ={"/{key}", "{key}"}, method = {RequestMethod.POST, RequestMethod.GET})
-    Response<Object> getValueFromkey(@PathVariable(value = "key") String key)
-    {
-        systemRedis.init();
+    Response<Object> getValueFromkey(@PathVariable(value = "key") String key) {
+        Response<Object> rsp = null;
 
-        JSONObject obj = new JSONObject();
-        if (null != key) {
-            obj.put(key, "xiayunlan");
-        }
-        Response<Object> rsp = Response.makeResponse(obj);
+        //try {
+            systemRedis.init();
+            String value = systemRedis.redisUtil.getString(key);
+
+            JSONObject obj = new JSONObject();
+            if (null != key) {
+                obj.put(key, value);
+            }
+            rsp = Response.makeResponse(obj);
+//        } catch (Throwable e) {
+//            System.out.println(" systemRedis.init Error :" + e);
+//        }
+
         return rsp;
     }
 }
