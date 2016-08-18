@@ -4,7 +4,12 @@
 | Import |
 | smartrics.rest.fitnesse.fixture |
 
+!c  !1  Redis Demo
+''' https://github.com/xetorthio/jedis '''
+''' http://www.wendangxiazai.com/b-4e335b6e0975f46526d3e12c.html   '''
+''' 代码参考： http://www.w2bc.com/article/156046  '''
 
+!1  key不为空
 |Table: Rest Fixture |  http://localhost:9000 |
 | setHeader | Content-Type : application/json;charset=UTF-8 |
 | setBody | {bizData: {key: "sutaiyun"}}  |
@@ -12,3 +17,11 @@
 | let  | content           | js  | response.body                     |              |
 | let  | contentMsg        | js  | response.jsonbody.msg             |              |
 
+
+!1  key为空，遍历数据，rest fail
+|Table: Rest Fixture |  http://localhost:9000 |
+| setHeader | Content-Type : application/json;charset=UTF-8 |
+| setBody | {bizData: {key: "sutaiyun"}}  |
+| POST | /redis/ | 200 | Content-Type : application/json; | jsonbody.bizData == "{}" |
+| let  | content           | js  | response.body                     |              |
+| let  | contentMsg        | js  | response.jsonbody.msg             |              |

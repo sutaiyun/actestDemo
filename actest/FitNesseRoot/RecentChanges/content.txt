@@ -1,4 +1,4 @@
-|FrontPage.RestServerAcTest.functionDemoTest.RedisFunctionTest||14:38:29 星期三, 八月 17, 2016|
+|FrontPage.RestServerAcTest.functionDemoTest.RedisFunctionTest||23:17:59 星期三, 八月 17, 2016|
 |FrontPage.RestServerAcTest.functionDemoTest||13:52:36 星期三, 八月 17, 2016|
 |FrontPage.RestServerAcTest.SeleniumTest.StartBrowser||14:48:17 星期二, 八月 16, 2016|
 |FrontPage.RestServerAcTest.RestFixtureTest.LoginInRestFixture||12:56:57 星期一, 八月 15, 2016|

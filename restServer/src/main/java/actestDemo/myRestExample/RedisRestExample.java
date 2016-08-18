@@ -2,8 +2,11 @@ package actestDemo.myRestExample;
 
 import actestDemo.common.*;
 import net.minidev.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,15 +17,27 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 @RequestMapping("/redis")
 @SpringBootApplication
 public class RedisRestExample {
-    @RequestMapping(value ={"/{key}", ""}, method = {RequestMethod.POST, RequestMethod.GET})
+
+    //SystemRedis systemRedis = new SystemRedis();
+    @Autowired
+    private SystemRedis systemRedis;
+
+    @Autowired
+    private DemoConfig demoConfig;
+
+    @RequestMapping(value ={"/{key}", "{key}"}, method = {RequestMethod.POST, RequestMethod.GET})
     Response<Object> getValueFromkey(@PathVariable(value = "key") String key)
     {
+        systemRedis.init();
+
         JSONObject obj = new JSONObject();
-        obj.put("sutaiyun", "xiayunlan");
+        if (null != key) {
+            obj.put(key, "xiayunlan");
+        }
         Response<Object> rsp = Response.makeResponse(obj);
         return rsp;
     }

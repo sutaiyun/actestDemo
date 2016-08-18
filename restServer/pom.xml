@@ -35,10 +35,17 @@
             <artifactId>json-smart</artifactId>
             <version>2.2</version>
         </dependency>
+        <!--
         <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20140107</version>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.6.3</version>
         </dependency>
     </dependencies>
 

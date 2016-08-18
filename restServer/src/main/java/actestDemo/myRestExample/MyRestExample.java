@@ -1,5 +1,6 @@
 package actestDemo.myRestExample;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +12,7 @@ import actestDemo.common.*;
  */
 
 @RestController
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 @SpringBootApplication
 public class MyRestExample {
 
@@ -26,6 +27,8 @@ public class MyRestExample {
 //    }
     @RequestMapping("/session/login")
     public Response<Object> login () {
+        //systemRedis.init();
+
         JSONObject obj = new JSONObject();
         Response<Object> rsp = Response.makeResponse(obj);
         return rsp;
@@ -34,5 +37,4 @@ public class MyRestExample {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(MyRestExample.class, args);
     }
-
 }
