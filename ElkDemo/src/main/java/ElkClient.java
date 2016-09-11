@@ -1,10 +1,14 @@
+import org.apache.lucene.queryparser.xml.FilterBuilder;
+import org.apache.lucene.queryparser.xml.FilterBuilderFactory;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
-import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.action.search.*;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.aggregations.bucket.filters.FiltersAggregationBuilder;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -50,7 +54,7 @@ public class ElkClient implements CommandLineRunner {
         return hitsMap.toString();
     }
 
-    public String Save(String index, String type, Integer id, String contentJson ) {
+    public String Save(String index, String type, Integer id, String contentJson) {
         IndexRequest indexRequest = new IndexRequest(index, type, id.toString());
         indexRequest.source(contentJson);
 
@@ -58,8 +62,47 @@ public class ElkClient implements CommandLineRunner {
         return indexRequest.toString();
     }
 
-    public String QueryByJson(String logs, String perf, String queryJson) {
-        //TODO:
-        return "TODO";
+    public String QueryByTerm(String index, String type, String termKey, String termValue) {
+        String resultString = "";
+        SearchResponse response = client.prepareSearch(index)
+                                        .setTypes(type)
+                                        .setSearchType(SearchType.DFS_QUERY_THEN_FETCH)
+                                        .setQuery(QueryBuilders.termQuery(termKey, termValue))
+                                        //.setPostFilter(QueryBuilders.rangeQuery("conten-len").from(0).to(100))
+                                        .setFrom(0)
+                                        .setSize(3)
+                                        .setExplain(true)
+                                        .execute()
+                                        .actionGet();
+
+        for (SearchHit hit : response.getHits().getHits()) {
+            resultString += hit.getSourceAsString();
+        }
+        return resultString;
+    }
+
+    public String QueryByMultiSearch(String index, String type, MultiSearchItem[] multiSearchItems) {
+        String resultString = "";
+
+        MultiSearchRequestBuilder multiSearchRequestBuilder = client.prepareMultiSearch();
+        for( MultiSearchItem item : multiSearchItems)
+        {
+            SearchRequestBuilder srb = client.prepareSearch(index)
+                .setTypes(type)
+                .setSearchType(SearchType.DFS_QUERY_THEN_FETCH)
+                .setQuery(QueryBuilders.termQuery(item.term, item.value));
+            multiSearchRequestBuilder.add(srb);
+        }
+        MultiSearchResponse searchResponse = multiSearchRequestBuilder.execute().actionGet();
+
+        for( MultiSearchResponse.Item item :searchResponse.getResponses())
+        {
+            SearchResponse response = item.getResponse();
+
+            for (SearchHit hit : response.getHits().getHits()) {
+                resultString += hit.getSourceAsString();
+            }
+        }
+        return resultString;
     }
 }
